@@ -28,3 +28,19 @@ Welcome to CryptoCurrency Collector Game! This game is designed with the aesthet
 ## Credits:
 - **Game Development:** Marwa Alazab
 
+## Screenshots:
+
+### Level 1:
+![Level 1](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%201.PNG?raw=true)
+
+### Level 2:
+![Level 2](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%202.PNG?raw=true)
+
+### Level 3:
+![Level 3](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%203.PNG?raw=true)
+
+### Level 4:
+![Level 4](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%204.PNG?raw=true)
+
+### Level 5:
+![Level 5](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%205.PNG?raw=true)
