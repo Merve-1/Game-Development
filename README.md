@@ -25,8 +25,6 @@ Welcome to CryptoCurrency Collector Game! This game is designed with the aesthet
 - **Scripts:** Custom scripts were developed for character movement, currency collection, level progression, etc.
 - **Feedback:** Feedback and suggestions for improvement are welcome. Feel free to create an issue or pull request on the GitHub repository.
 
-## Credits:
-- **Game Development:** Marwa Alazab
 
 ## Screenshots:
 
