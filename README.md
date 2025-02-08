@@ -29,16 +29,16 @@ Welcome to CryptoCurrency Collector Game! This game is designed with the aesthet
 ## Screenshots:
 
 ### Level 1:
-![Level 1](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%201.PNG?raw=true)
+![image](https://github.com/user-attachments/assets/9a0aa98a-ed27-4e1d-a4df-16e4206137b7)
 
 ### Level 2:
-![Level 2](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%202.PNG?raw=true)
+![image](https://github.com/user-attachments/assets/afab2acb-9c07-458f-bad8-968253b32ea9)
 
 ### Level 3:
-![Level 3](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%203.PNG?raw=true)
+![image](https://github.com/user-attachments/assets/a888affa-71d7-49a5-827d-b74f755d462e)
 
 ### Level 4:
-![Level 4](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%204.PNG?raw=true)
+![image](https://github.com/user-attachments/assets/144f2405-fafb-4ba4-8c51-ee8fc97f8cf8)
 
 ### Level 5:
-![Level 5](https://github.com/Merve-1/CrytocurrencyGame/blob/main/level%205.PNG?raw=true)
+![image](https://github.com/user-attachments/assets/542706ea-9a6c-4023-a7d3-605e1556a872)
