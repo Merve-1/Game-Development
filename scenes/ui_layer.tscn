@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bdseaegnc60gq"]
+
+[ext_resource type="Script" uid="uid://b77mn3itqy6ne" path="res://scripts/ui_layer.gd" id="1_6syxi"]
+[ext_resource type="Script" uid="uid://cbgqx701u5kg3" path="res://scripts/hud.gd" id="1_bkwom"]
+[ext_resource type="FontFile" uid="uid://dw7ojio0rtlem" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_6av8n"]
+[ext_resource type="PackedScene" uid="uid://bwsiie6kinejt" path="res://scenes/win_screen.tscn" id="4_6gmgv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6syxi"]
+font = ExtResource("2_6av8n")
+font_color = Color(0.07394644, 0, 0.56880116, 1)
+
+[node name="UILayer" type="CanvasLayer" unique_id=1907846047]
+script = ExtResource("1_6syxi")
+
+[node name="HUD" type="Control" parent="." unique_id=1908197021]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -238.0
+offset_right = 239.0
+offset_bottom = 269.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+script = ExtResource("1_bkwom")
+
+[node name="Timer" type="Label" parent="HUD" unique_id=594949544]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "TIMER: 9999"
+label_settings = SubResource("LabelSettings_6syxi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WinScreen" parent="." unique_id=673807619 instance=ExtResource("4_6gmgv")]
+visible = false

@@ -1,31 +1,42 @@
 extends CharacterBody2D
-var speed = 300
-var bullet_scene = load("res://scenes/bullet.tscn")
 
-signal took_damage
+class_name Player
 
-@onready var bullet_container = $RocketContainer
-func _process(delta):
-	if Input.is_action_just_pressed("shoot"):
-		shoot()
-func _physics_process(delta):
-	velocity = Vector2(0,0)
-	if Input.is_action_pressed("move_right"):
-		velocity.x = speed
-	if Input.is_action_pressed("move_left"):
-		velocity.x = -speed
-	if Input.is_action_pressed("move_up"):
-		velocity.y = -speed 
-	if Input.is_action_pressed("move_down"):
-		velocity.y = speed
-	var screen_size = get_viewport_rect().size
-	global_position = global_position.clamp(Vector2(0,0),screen_size)
-	move_and_slide()	
-func shoot():
-	var bullet_instance = bullet_scene.instantiate()
-	bullet_container.add_child(bullet_instance)
-	bullet_instance.global_position = global_position
-	bullet_instance.global_position.x +=50 
-
-func take_damage():
-	emit_signal("took_damage")
+@export var gravity = 400
+@export var speed = 125
+@export var jump_force = 200
+@onready var animated_sprite = $AnimatedSprite2D
+var active = true
+#func _process(delta):
+	#if Input.is_action_just_pressed("move_right"):
+		#animated_sprite.play("run")
+func _physics_process(delta: float) -> void:
+	if is_on_floor() == false:
+		velocity.y += gravity * delta 	
+	var direction = 0
+	if active == true:
+		if Input.is_action_just_pressed("jump") && is_on_floor():
+			jump(jump_force)
+		direction = Input.get_axis("move_left", "move_right")
+	
+	if direction !=0:
+		animated_sprite.flip_h = (direction == -1)
+	velocity.x = direction * speed
+	
+	
+	
+	move_and_slide()
+	update_animations(direction)
+func jump(force):
+	velocity.y = -force
+func update_animations(direction):
+	if is_on_floor():
+		if direction == 0:
+			animated_sprite.play("idle")
+		else:
+			animated_sprite.play("run")
+	else:
+		if velocity.y<0:
+			animated_sprite.play("jump")
+		else:
+			animated_sprite.play("fall")
